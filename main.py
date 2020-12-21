@@ -2,9 +2,6 @@ from pascal import Contact
 import sqlite3
 from prettytable import PrettyTable
 
-conn = sqlite3.connect("db.sql")
-
-c = conn.cursor()
 
 def add(contact):
     conn = sqlite3.connect("db.sql")
@@ -31,5 +28,3 @@ def listContacts():
 
     
     conn.close()
-    
-conn.close()
